@@ -1,0 +1,63 @@
+## Arquitetura de camadas
+
+Uberlandia dia 28 de agosto de 2020
+
+Aula de Desenvolvimento Mobile
+
+### Camada MVC
+
+- Model
+- View
+- Controller
+
+### Model
+
+O model tem algumas classes de **infraestrutura**, responsável por conectar nos bancos.
+
+### Regras de negócio
+
+Criamos camadas para separar as responsabilidades de aplicação.
+
+Antes de falar sobre as camadas, precisamos entender sobre **ddd** -> Domain Drive Design.
+
+Arquitetar nossa arquitetura em _domínios_. O domínio é a **iteração**, consequência de uma ação e atividades subsequentes do fluxo do processo. Definir quais atores interagem, regras de negócio que se aplicam ao domínio.
+
+- Domínio
+  - Atores x x x
+  - regras que se aplicam ao domínio y y y
+
+#### DDD
+
+- Ter um software responsável
+- Escalável - Caso ele aumentar ele precisa aguentar, suporte para escalar
+- Testável
+- Bem implementada
+  - Clean code -> vc precisa escrever o código como se estivesse escrevendo um livro
+  - S.O.L.I.D.
+- Manutenção fácil
+- Escrito utilizando boas práticas
+
+Para se trabalhar com DDD nós podemos abstrair algumas camadas.
+
+##### Camada de Apresentação
+
+- Android
+- iOS
+- Javascript?
+- HTML
+
+##### Serviços
+
+- Regras de negócio
+
+##### Domínios
+
+Entidades
+- Cliente
+- Produto
+- Fornecedor
+
+##### Infra
+
+- Banco de Dados
+- DAO, JDBC
